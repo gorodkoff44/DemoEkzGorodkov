@@ -21,6 +21,6 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="ServiceList" Content="Список услуг" Grid.Row="1" Click="ServiceList_Click" />
+        <Button x:Name="ServiceList" Background="#e1e4ff" Content="Список услуг" Grid.Column="1" Grid.Row="2" Click="ServiceList_Click" />
     </Grid>
 </Page>

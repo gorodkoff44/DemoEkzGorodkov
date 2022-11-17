@@ -9,7 +9,8 @@
       Title="ServiceView">
 
     <Grid>
-        <DataGrid x:Name="DGridServices" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,0,0,60" >
+        <StackPanel>
+            <DataGrid x:Name="DGridServices" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,0,0,60" >
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Услуга" Binding="{Binding Title}" Width="*" />
                 <DataGridTextColumn Header="Стоимость" Binding="{Binding Cost}" Width="*" />
@@ -22,6 +23,11 @@
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>
+        <WrapPanel>
+            <Button x:Name="del" Content="Удалить" FontSize="18" HorizontalAlignment="Right" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+            <Button x:Name="Refresh"  Content="Обновить" FontSize="18" HorizontalAlignment="Right" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
+        </WrapPanel>
+        </StackPanel>
 
     </Grid>
 </Page>
