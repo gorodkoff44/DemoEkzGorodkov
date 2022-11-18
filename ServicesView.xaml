@@ -6,28 +6,34 @@
       xmlns:local="clr-namespace:DemoEkzGorodkov"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ServiceView">
+      IsVisibleChanged="Page_IsVisibleChanged"
+      Title="Сервисы">
 
     <Grid>
-        <StackPanel>
+        <!--<Grid>
+                <WrapPanel HorizontalAlignment="Right">
+                    <Button x:Name="del" Click="del_Click" Content="Удалить" HorizontalAlignment="Right" />
+                    <Button x:Name="Refresh" Content="Обновить" HorizontalAlignment="Right"  />
+                </WrapPanel>
+            </Grid>-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
             <DataGrid x:Name="DGridServices" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,0,0,60" >
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="Услуга" Binding="{Binding Title}" Width="*" />
-                <DataGridTextColumn Header="Стоимость" Binding="{Binding Cost}" Width="*" />
-                <DataGridTemplateColumn Width="auto">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <Button Content="Редактировать" x:Name="edit" />
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-        <WrapPanel>
-            <Button x:Name="del" Content="Удалить" FontSize="18" HorizontalAlignment="Right" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
-            <Button x:Name="Refresh"  Content="Обновить" FontSize="18" HorizontalAlignment="Right" Foreground="White" Background="#55000000" BorderBrush="#33ffffff" />
-        </WrapPanel>
-        </StackPanel>
-
-    </Grid>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Услуга" Binding="{Binding Title}" Width="*" />
+                    <DataGridTextColumn Header="Стоимость" Binding="{Binding Cost, StringFormat=0.00 руб }" Width="*" />
+                    <DataGridTemplateColumn Width="auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="Редактировать" x:Name="edit" Click="edit_Click" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Button x:Name="del" Grid.Row="1"  Click="del_Click" Content="Удалить" HorizontalAlignment="Left" />
+            <Button x:Name="add" Grid.Row="1" Content="Добавить" HorizontalAlignment="Right" Click="add_Click"  />
+        </Grid>
 </Page>

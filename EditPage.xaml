@@ -1,0 +1,21 @@
+﻿<Page x:Class="DemoEkzGorodkov.EditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DemoEkzGorodkov"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Редактирование">
+
+    <Grid>
+        <StackPanel>
+            <TextBox x:Name="NameService" Text="{Binding Title}" />
+        <TextBox x:Name="Price" Text="{Binding Cost}" />
+        <Button x:Name="Save" Content="Сохранить" Click="Save_Click" Width="50" Height="20"/>
+        </StackPanel>
+
+        <!--<DataGridTextColumn Header="Услуга" Binding="{Binding Title}" Width="*" />
+        <DataGridTextColumn Header="Стоимость" Binding="{Binding Cost, StringFormat=0.00 руб }" Width="*" />-->
+    </Grid>
+</Page>
