@@ -29,5 +29,15 @@ namespace DemoEkzGorodkov
         {
             NavigationService.Navigate(new Uri("/ServicesView.xaml", UriKind.Relative));
         }
+
+        private void ClientList_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ClientsView.xaml", UriKind.Relative));
+        }
+
+        private void enroll_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ClientServicePage.xaml", UriKind.Relative));
+        }
     }
 }

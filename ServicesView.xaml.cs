@@ -62,6 +62,12 @@ namespace DemoEkzGorodkov
         private void add_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(new Uri("/AddServiceView.xaml", UriKind.Relative));
+
+        }
+        private void btnView_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new ViewService((sender as Button).DataContext as Service));
         }
     }
+
 }

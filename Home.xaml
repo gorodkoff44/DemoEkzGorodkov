@@ -21,6 +21,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="ServiceList" Background="#e1e4ff" Content="Список услуг" Grid.Column="1" Grid.Row="2" Click="ServiceList_Click" />
+        <Button x:Name="ClientList" Background="#e1e4ff" Content="Список клиентов" Grid.Column="1" Grid.Row="2" Click="ClientList_Click" />
+        <Button x:Name="ServiceList" Background="#e1e4ff" Content="Список услуг" Grid.Column="1" Grid.Row="3" Click="ServiceList_Click" />
+        <Button x:Name="enroll" Background="#e1e4ff" Content="Записаться на услугу" Grid.Column="1" Grid.Row="4" Click="enroll_Click" />
+        <Label Content="Cалон 'Бархатные бровки'" Grid.Row="0" Grid.ColumnSpan="3" FontSize="50" HorizontalAlignment="Center" />
     </Grid>
 </Page>

@@ -78,6 +78,12 @@
     <Compile Include="ClientService.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ClientServicePage.xaml.cs">
+      <DependentUpon>ClientServicePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClientsView.xaml.cs">
+      <DependentUpon>ClientsView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DocumentByService.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -117,7 +123,18 @@
     <Compile Include="Tag.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViewService.xaml.cs">
+      <DependentUpon>ViewService.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddServiceView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientServicePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ClientsView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,6 +169,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ServicesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewService.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -201,6 +222,78 @@
       <DependentUpon>BaseModel.edmx</DependentUpon>
       <LastGenOutput>BaseModel.cs</LastGenOutput>
     </Content>
+    <Resource Include="Услуги салона красоты\122454.png" />
+    <Resource Include="Услуги салона красоты\96.png" />
+    <Resource Include="Услуги салона красоты\face.png" />
+    <Resource Include="Услуги салона красоты\makeup.jpg" />
+    <Resource Include="Услуги салона красоты\man.png" />
+    <Resource Include="Услуги салона красоты\mask.jpeg" />
+    <Resource Include="Услуги салона красоты\piling.jpg" />
+    <Resource Include="Услуги салона красоты\soliarij.jpg" />
+    <Resource Include="Услуги салона красоты\брови.png" />
+    <Resource Include="Услуги салона красоты\Гречишный массаж.jpg" />
+    <Resource Include="Услуги салона красоты\Декорирование нарощенных ресниц стразами.jpg" />
+    <Resource Include="Услуги салона красоты\Демакияж.jpg" />
+    <Resource Include="Услуги салона красоты\Депиляция воском.jpg" />
+    <Resource Include="Услуги салона красоты\Европейский маникюр.jpg" />
+    <Resource Include="Услуги салона красоты\ИК-сауна.jpg" />
+    <Resource Include="Услуги салона красоты\Классический маникюр.png" />
+    <Resource Include="Услуги салона красоты\Комбинированный маникюр.jpg" />
+    <Resource Include="Услуги салона красоты\Контурная пластика.jpg" />
+    <Resource Include="Услуги салона красоты\массаж.jpg" />
+    <Resource Include="Услуги салона красоты\Мезотерапия.jpg" />
+    <Resource Include="Услуги салона красоты\Моделирование ресниц.jpg" />
+    <Resource Include="Услуги салона красоты\ногти.png" />
+    <Resource Include="Услуги салона красоты\Окрашивание бровей.jpg" />
+    <Resource Include="Услуги салона красоты\Парафинотерапия.jpg" />
+    <Resource Include="Услуги салона красоты\Покрытие ногтей гель-лаком.jpg" />
+    <Resource Include="Услуги салона красоты\Полировка ногтей.jpg" />
+    <Resource Include="Услуги салона красоты\Прессотерапия.jpg" />
+    <Resource Include="Услуги салона красоты\Прокол ушей пистолетом.png" />
+    <Resource Include="Услуги салона красоты\Ресницы.png" />
+    <Resource Include="Услуги салона красоты\Снятие ресниц.jpg" />
+    <Resource Include="Услуги салона красоты\Стоун-терапия.jpg" />
+    <Resource Include="Услуги салона красоты\стрижка.png" />
+    <Resource Include="Услуги салона красоты\Укрепление ногтей гелем.jpg" />
+    <Resource Include="Услуги салона красоты\Шугаринг.jpg" />
+    <Resource Include="Услуги салона красоты\Экспресс SPA.png" />
+    <Resource Include="Услуги салона красоты\Экспресс-педикюр.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\122454.png" />
+    <Resource Include="Resources\Услуги салона красоты\96.png" />
+    <Resource Include="Resources\Услуги салона красоты\face.png" />
+    <Resource Include="Resources\Услуги салона красоты\makeup.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\man.png" />
+    <Resource Include="Resources\Услуги салона красоты\mask.jpeg" />
+    <Resource Include="Resources\Услуги салона красоты\piling.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\soliarij.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\брови.png" />
+    <Resource Include="Resources\Услуги салона красоты\Гречишный массаж.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Декорирование нарощенных ресниц стразами.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Демакияж.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Депиляция воском.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Европейский маникюр.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\ИК-сауна.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Классический маникюр.png" />
+    <Resource Include="Resources\Услуги салона красоты\Комбинированный маникюр.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Контурная пластика.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\массаж.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Мезотерапия.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Моделирование ресниц.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\ногти.png" />
+    <Resource Include="Resources\Услуги салона красоты\Окрашивание бровей.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Парафинотерапия.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Покрытие ногтей гель-лаком.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Полировка ногтей.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Прессотерапия.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Прокол ушей пистолетом.png" />
+    <Resource Include="Resources\Услуги салона красоты\Ресницы.png" />
+    <Resource Include="Resources\Услуги салона красоты\Снятие ресниц.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Стоун-терапия.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\стрижка.png" />
+    <Resource Include="Resources\Услуги салона красоты\Укрепление ногтей гелем.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Шугаринг.jpg" />
+    <Resource Include="Resources\Услуги салона красоты\Экспресс SPA.png" />
+    <Resource Include="Resources\Услуги салона красоты\Экспресс-педикюр.jpg" />
     <Resource Include="Resources\beauty_logo.ico" />
   </ItemGroup>
   <ItemGroup>

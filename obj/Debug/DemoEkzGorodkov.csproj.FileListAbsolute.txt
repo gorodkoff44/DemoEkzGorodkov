@@ -54,3 +54,9 @@ C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\EditPage.g.
 C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\EditPage.baml
 C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\AddServiceView.g.cs
 C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\AddServiceView.baml
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ViewService.g.cs
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ViewService.baml
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientsView.g.cs
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientsView.baml
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientServicePage.g.cs
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientServicePage.baml
