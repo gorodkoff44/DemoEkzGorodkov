@@ -27,7 +27,7 @@ namespace DemoEkzGorodkov
 
         private void ServiceList_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/ServicesView.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/ServicesNew.xaml", UriKind.Relative));
         }
 
         private void ClientList_Click(object sender, RoutedEventArgs e)
