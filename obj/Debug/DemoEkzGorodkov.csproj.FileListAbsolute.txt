@@ -60,3 +60,5 @@ C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientsView
 C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientsView.baml
 C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientServicePage.g.cs
 C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\ClientServicePage.baml
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\DemoView.g.cs
+C:\Users\comp0705\Desktop\Городков\DemoEkzGorodkov\obj\Debug\DemoView.baml

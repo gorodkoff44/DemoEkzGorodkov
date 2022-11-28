@@ -84,6 +84,9 @@
     <Compile Include="ClientsView.xaml.cs">
       <DependentUpon>ClientsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DemoView.xaml.cs">
+      <DependentUpon>DemoView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DocumentByService.cs">
       <DependentUpon>BaseModel.tt</DependentUpon>
     </Compile>
@@ -135,6 +138,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ClientsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DemoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

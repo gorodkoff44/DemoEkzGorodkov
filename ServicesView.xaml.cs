@@ -66,7 +66,8 @@ namespace DemoEkzGorodkov
         }
         private void btnView_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ViewService((sender as Button).DataContext as Service));
+            //NavigationService.Navigate(new ViewService((sender as Button).DataContext as Service));
+            NavigationService.Navigate(new DemoView((sender as Button).DataContext as Service));
         }
     }
 
