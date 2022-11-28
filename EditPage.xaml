@@ -9,13 +9,41 @@
       Title="Редактирование">
 
     <Grid>
-        <StackPanel>
-            <TextBox x:Name="NameService" Text="{Binding Title}" />
-        <TextBox x:Name="Price" Text="{Binding Cost}" />
-        <Button x:Name="Save" Content="Сохранить" Click="Save_Click" Width="50" Height="20"/>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <!--столбцы-->
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!--строки-->
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30*"/>
 
-        <!--<DataGridTextColumn Header="Услуга" Binding="{Binding Title}" Width="*" />
-        <DataGridTextColumn Header="Стоимость" Binding="{Binding Cost, StringFormat=0.00 руб }" Width="*" />-->
+
+        </Grid.RowDefinitions>
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="0" Text="Наименование" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="TitleTB" Text="{Binding Title}" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" />
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="1" Text="Цена" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="CostTB" Text="{Binding Cost, StringFormat=0.00 руб }" FontSize="14" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" />
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="2" Text="Время в сек." HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="DurationInSecondsTB" Text="{Binding DurationInSeconds}" FontSize="14" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" />
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="3" Text="Описание" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="DescriptionTB" Text="{Binding Description}" FontSize="14" Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" />
+        <TextBlock FontSize="14" Grid.Column="0" Grid.Row="4" Text="Скидка %" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+        <TextBox x:Name="DiscountTB" Text="{Binding Discount}" FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" />
+        <TextBlock FontSize="14"  Grid.Column="0" Grid.Row="5" Text="Путь к изображению" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16"></TextBlock>
+        <TextBox x:Name="MainImagePath" Text="{Binding MainImagePath}"  FontSize="14" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" />
+        <Button x:Name="Save" Content="Сохранить"  Grid.Column="1" Grid.Row="6" Click="Save_Click" Width="80" Height="30"/>
+        <Image Source="{Binding MainImagePath}" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="2" HorizontalAlignment="Left" />
+
+        <!--<Button FontSize="14" Grid.Column="1" Grid.Row="14" Content="Внести данные" x:Name="save" Click="save_Click" Width="120" Foreground="White" Background="#55000000"  />-->
     </Grid>
+ 
 </Page>

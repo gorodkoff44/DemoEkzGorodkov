@@ -11,7 +11,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <!--столбцы-->
-            <ColumnDefinition Width="26*"/>
+            <ColumnDefinition Width="35*"/>
             <ColumnDefinition Width="131*"/>
             <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
@@ -23,12 +23,9 @@
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="30*"/>
 
         </Grid.RowDefinitions>
-        <!--выпадающий список-->
-        <Image Source="{Binding MainImagePath}" Grid.Column="0" Grid.Row="6"  Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="0,0,0,-122" HorizontalAlignment="Center" />
         <TextBlock FontSize="14" Grid.Column="0" Grid.Row="0" Text="Наименование" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
         <TextBox x:Name="TitleTB" Text="{Binding Title}" IsReadOnly="True" FontSize="14" Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" />
         <TextBlock FontSize="14" Grid.Column="0" Grid.Row="1" Text="Цена" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
@@ -41,7 +38,8 @@
         <TextBox x:Name="DiscountTB" Text="{Binding Discount}" IsReadOnly="True" FontSize="14" Grid.Column="1" Grid.Row="4" VerticalAlignment="Center" />
 
         <TextBlock FontSize="14"  Grid.Column="0" Grid.Row="5" Text="Путь к изображению" HorizontalAlignment="Center" VerticalAlignment="Center" Height="16"></TextBlock>
-        <TextBox x:Name="MainImagePath" Text="{Binding MainImagePath}"  FontSize="14" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" />
+        <TextBox x:Name="MainImagePath" Text="{Binding MainImagePath}" IsReadOnly="True" FontSize="14" Grid.Column="1" Grid.Row="5" VerticalAlignment="Center" />
+        <Image Source="{Binding MainImagePath}" Grid.Column="0" Grid.Row="6"  Grid.RowSpan="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" />
 
 
 
