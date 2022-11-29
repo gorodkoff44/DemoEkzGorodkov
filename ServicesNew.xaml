@@ -16,14 +16,14 @@
         <ListView Grid.Row="1" x:Name="LVServices">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Margin="20" Width="400">
+                    <Grid Margin="20">
                         <Grid.RowDefinitions>
                             <RowDefinition Height="70"/>
-                            <RowDefinition Height="310" />
+                            <RowDefinition Height="70" />
                             <RowDefinition Height="auto" />
                             <RowDefinition Height="auto" />
                         </Grid.RowDefinitions>
-                        <Image Width="400" Grid.Row="1" Stretch="UniformToFill" HorizontalAlignment="Center" Margin="5">
+                        <Image Width="150" Height="150" Grid.RowSpan="2" HorizontalAlignment="Left" Margin="5">
                             <Image.Source>
                                 <Binding Path="MainImagePath">
                                     <Binding.TargetNullValue>
@@ -32,11 +32,12 @@
                                 </Binding>
                             </Image.Source>
                         </Image>
-                        <TextBlock Text="{Binding Title}" VerticalAlignment="Center" TextAlignment="Center" Width="390" TextWrapping="Wrap" HorizontalAlignment="Center" Margin="5 5" FontSize="26" Grid.Row="0"></TextBlock>
-                        <TextBlock Text="{Binding Cost, StringFormat=0.00 рублей}" Grid.Row="2" Margin="5 5 5 15" HorizontalAlignment="Center" FontSize="26" FontWeight="Bold"></TextBlock>
-                        <TextBlock Text="{Binding Discount}" Grid.Row="3" FontSize="14" HorizontalAlignment="Right"></TextBlock>
-                        <TextBlock Grid.Row="3" FontSize="14" HorizontalAlignment="Left" ></TextBlock>
-                        
+                        <StackPanel Grid.RowSpan="2" Margin="160 20 0 0">
+                        <TextBlock  Text="{Binding Title}" VerticalAlignment="Top" TextAlignment="Left" TextWrapping="NoWrap" FontSize="26"></TextBlock>
+                        <TextBlock  Text="{Binding Cost, StringFormat=0.00 рублей}" FontSize="26"></TextBlock>
+                        <TextBlock Text="{Binding Discount, StringFormat={}Cкидка {0}%}" FontSize="14"></TextBlock>
+                        </StackPanel>
+
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
